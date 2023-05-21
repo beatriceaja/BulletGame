@@ -1,0 +1,26 @@
+function shootInHead() {
+  console.log("You chose the path of getting shot in the head. Game over.");
+}
+
+function goSwimming() {
+  console.log("You chose the path of going swimming. Congratulations!");
+}
+
+function main() {
+  console.log("Welcome to the Choose Your Path Adventure Game!");
+  console.log("You are standing at a crossroad. Which path do you choose?");
+  console.log("1. Get shot in the head");
+  console.log("2. Go swimming");
+
+  const choice = prompt("Enter your choice (1 or 2): ");
+
+  if (choice === '1') {
+    shootInHead();
+  } else if (choice === '2') {
+    goSwimming();
+  } else {
+    console.log("Invalid choice. Please try again.");
+  }
+}
+
+main();
